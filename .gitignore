@@ -2,22 +2,30 @@
 # Dependencies
 node_modules/
 
-# Build outputs
+# Build artifacts
 dist/
 build/
 target/
 
-# TypeScript/JavaScript
-*.tsbuildinfo
-.next/
-.nuxt/
-.vuepress/dist
-/public
-
 # Environment variables
 .env
 .env.local
-*.env.*
+.env.*
+
+# Cache directories
+.cache/
+.node_modules/
+.npm/
+.yarn/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
 
 # IDE files
 .vscode/
@@ -25,10 +33,51 @@ target/
 *.swp
 *.swo
 
-# Logs
-*.log
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+.env
 
-# Coverage
+# Coverage reports
 coverage/
-.nyc_output/
+htmlcov/
+.coverage
+
+# MyPy cache
+.mypy_cache/
+
+# Pytest cache
+.pytest_cache/
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing
+.junit/
+.venv/
+
+# Local development
+.env.local
+.env.dev
+.env.test
+.env.production
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 ```
