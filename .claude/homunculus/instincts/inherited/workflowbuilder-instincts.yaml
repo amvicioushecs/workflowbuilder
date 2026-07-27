@@ -1,0 +1,335 @@
+# Instincts generated from https://github.com/amvicioushecs/workflowbuilder
+# Generated: 2026-07-27T22:00:16.273Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: workflowbuilder-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Commit Length
+
+## Action
+
+Write moderate-length commit messages (~59 characters)
+
+## Evidence
+
+- Average commit message length: 59 chars
+- Based on 1 commits
+
+---
+id: workflowbuilder-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: workflowbuilder-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: workflowbuilder-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: workflowbuilder-arch-type-based
+trigger: "when adding new code"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: https://github.com/amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Arch Type Based
+
+## Action
+
+Place code in the appropriate type folder (components/, services/, utils/, etc.)
+
+## Evidence
+
+- Type-based module organization detected
+- Folders: 
+
+---
+id: workflowbuilder-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: workflowbuilder-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Instinct File Naming
+
+## Action
+
+Name the file using kebab-case
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: workflowbuilder-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: workflowbuilder-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: workflowbuilder-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: workflowbuilder-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: workflowbuilder-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: workflowbuilder-instinct-error-handling
+trigger: "When handling potential errors in code"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Instinct Error Handling
+
+## Action
+
+Wrap code in try-catch blocks
+
+## Evidence
+
+- Pattern in errorHandling.style
+
+---
+id: workflowbuilder-instinct-git-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Instinct Git Commit Format
+
+## Action
+
+Prefix the commit message with 'Title:'
+
+## Evidence
+
+- Seen in commit example: 'Title: Implement Nebula Master AI Product Creation Platform'
+
+---
+id: workflowbuilder-instinct-git-commit-length
+trigger: "When composing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Instinct Git Commit Length
+
+## Action
+
+Keep the commit message concise, around 59 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength
+
+---
+id: workflowbuilder-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Instinct Test Location
+
+## Action
+
+Place tests in a separate folder from source code
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: workflowbuilder-instinct-monorepo-structure
+trigger: "When adding a new application or package"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: amvicioushecs/workflowbuilder
+---
+
+# Workflowbuilder Instinct Monorepo Structure
+
+## Action
+
+Place it under the 'apps' folder in the monorepo
+
+## Evidence
+
+- Pattern in architecture.folderStructure.commonFolders
+
