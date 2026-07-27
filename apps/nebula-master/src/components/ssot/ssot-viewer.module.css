@@ -1,0 +1,206 @@
+.ssot-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.ssot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ssot-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #e0e0ff;
+  margin: 0;
+}
+
+.ssot-meta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.version-badge {
+  background: rgba(138, 43, 226, 0.3);
+  border: 1px solid rgba(138, 43, 226, 0.5);
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(224, 224, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: rgba(224, 224, 255, 0.5);
+}
+
+.ssot-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ssot-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #e0e0ff;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.discovery-list {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+.discovery-list dt {
+  font-weight: 600;
+  color: rgba(138, 43, 226, 0.9);
+}
+
+.discovery-list dd {
+  margin: 0;
+  color: rgba(224, 224, 255, 0.8);
+  line-height: 1.5;
+}
+
+.conversation-history {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.message {
+  padding: 1rem;
+  border-radius: 12px;
+  border-left: 3px solid transparent;
+}
+
+.message--nebula {
+  background: rgba(138, 43, 226, 0.1);
+  border-left-color: rgba(138, 43, 226, 0.5);
+}
+
+.message--user {
+  background: rgba(0, 255, 255, 0.05);
+  border-left-color: rgba(0, 255, 255, 0.4);
+}
+
+.message-role {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(224, 224, 255, 0.6);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.message-content {
+  color: rgba(224, 224, 255, 0.9);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.message-time {
+  font-size: 0.75rem;
+  color: rgba(224, 224, 255, 0.4);
+}
+
+.ssot-actions {
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rollback-button {
+  background: rgba(255, 182, 193, 0.1);
+  border: 1px solid rgba(255, 182, 193, 0.3);
+  border-radius: 8px;
+  padding: 0.625rem 1.25rem;
+  color: rgba(255, 182, 193, 0.9);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rollback-button:hover:not(:disabled) {
+  background: rgba(255, 182, 193, 0.2);
+}
+
+.rollback-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.version-history {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.history-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e0e0ff;
+  margin: 0 0 1rem 0;
+}
+
+.version-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.version-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.version-item--current {
+  background: rgba(138, 43, 226, 0.1);
+  border-color: rgba(138, 43, 226, 0.3);
+}
+
+.version-number {
+  font-weight: 600;
+  color: rgba(138, 43, 226, 0.9);
+}
+
+.version-date {
+  font-size: 0.75rem;
+  color: rgba(224, 224, 255, 0.5);
+}
