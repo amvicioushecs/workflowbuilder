@@ -1,0 +1,6 @@
+interface:
+  display_name: "Workflowbuilder"
+  short_description: "Repo-specific patterns and workflows for workflowbuilder"
+  default_prompt: "Use the workflowbuilder repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
